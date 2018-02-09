@@ -50,7 +50,19 @@ function addClickHandlers(){
 
     $('.dmgBtn').on('click', function(){
         game.controller.dealDamage(game.damageBank);
-    })
+    });
+
+    $('.instruction').on('click', function(){
+        $('.instruction-content').show();
+        $('.modalContainer').hide();
+        $('body').css('overflow-y', 'visible');
+    });
+
+    $('.back').on('click', function(){
+        $('.modalContainer').show();
+        $('.instruction-content').hide();
+        $('body').css('overflow-y', 'hidden');
+    });
 }
 
 
@@ -94,6 +106,8 @@ function GameModel(){
         $('.hitPoints').css('width','100%');
         $('.playerAvatar').removeClass('playerAvatarClicked');
         game.controller.getSessionToken();
+        $('.row:last-child').removeClass('readyPlayButton');
+
     }
 
     this.availableCharacters = {
@@ -312,6 +326,7 @@ function View(){
     this.activePlayButton = function(){
 
         game.playButtonClickable = true;
+        $('.row:last-child').addClass('readyPlayButton');
         $('.playButton').click(function(){
             if(game.playButtonClickable) {
               game.playButtonClickable = false;
@@ -374,7 +389,6 @@ function View(){
             game.roundTime--;
             $('.currentTime').text(game.roundTime);
             if(game.roundTime===0){
-                game.controller.lastDamage();
                 $('.questionModal').removeClass('questionModalShow');
                 clearInterval(game.roundTimer);
                 if(game.turn===1){
@@ -545,6 +559,7 @@ function Controller(){
 
 
     this.getCharacterInfo = function (character) {
+        console.log('get character function called');
         var loadingTimeout = setTimeout(function(){
             $('.loading-error').css('display','block');
         }, 10000);
