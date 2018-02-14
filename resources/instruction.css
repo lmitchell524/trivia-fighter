@@ -30,6 +30,7 @@ a{
 
 .instruction-content{
     background-image: url('images/backgrounds/particleBG.gif');
+    display: none;
     background-position: center;
     background-size: cover;
     background-color: #6c6c6c;
