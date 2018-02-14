@@ -864,6 +864,35 @@ h1 {
         text-shadow: 1.5px 1.5px #fafafa, -1.5px -1.5px #f8f3f3, -1.5px 1.5px white, 1.5px -1.5px #f6f6f6;
     }
 
+    .readyBanner {
+        border-top: 5px solid darkred;
+        border-bottom: 5px solid darkred;
+    }
+
+    .readyButton {
+        border: 5px solid darkred;
+    }
+
+    .readyButton:hover {
+        border: 5px solid yellow;
+    }
+
+    .loadingBarContainer {
+        border: 2px solid black;
+    }
+
+    .playButtonParent {
+        border: 3px solid #5f5353;
+    }
+
+    .readyPlayButton {
+        border: 3px solid darkred;
+    }
+
+    .playerAvatar {
+        border: 2px solid black;
+    }
+
 }
 
 /*************media query**********************/
@@ -876,12 +905,12 @@ h1 {
     }
 
     .answer{
-        font-size: 3vmin;
+        font-size: 2.5vmin;
     }
 }
 
 
-@media screen and (max-height:210px){
+@media screen and (max-height:200px){
     .warning{
         display: block;
     }
