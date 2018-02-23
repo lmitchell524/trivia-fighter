@@ -1,6 +1,8 @@
 # TRIVIA FIGHTER
 A two player Marvel vs DC fighting game with a core trivia mechanic.
 
+[Play it Now!](https://lorimitchell.tech/apps/trivia-fighter/)
+
 ### Technologies
 - HTML5
 - CSS3
@@ -21,5 +23,5 @@ A two player Marvel vs DC fighting game with a core trivia mechanic.
 - [Sangwoo Kim](https://github.com/sangwoo89118)
 
 ### Acknowledgements
-- **Hero/Villian Images** https://jsenior.deviantart.com/
-- **Backgrounds** : https://imgur.com/gallery/OinOT , https://imgur.com/gallery/gkK0C
+- **Hero/Villain Images** https://jsenior.deviantart.com/
+- **Backgrounds** : https://imgur.com/gallery/OinOT, https://imgur.com/gallery/gkK0C
