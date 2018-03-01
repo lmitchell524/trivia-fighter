@@ -3,6 +3,8 @@ A two player Marvel vs DC fighting game with a core trivia mechanic.
 
 [Play it Now!](https://lorimitchell.tech/apps/trivia-fighter/)
 
+[Logic Chart](/resorces/etc/APIproject.pdf)
+
 ### Technologies
 - HTML5
 - CSS3

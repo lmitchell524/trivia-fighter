@@ -181,7 +181,7 @@ a {
     margin: 0.75vmin auto;
 }
 
-.row:nth-child(4){
+.bottom-row {
     margin-bottom: 30px;
 }
 
@@ -248,6 +248,9 @@ h1 {
     width: 15vmin;
     height: 15vmin;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .playerAvatar:first-child {
@@ -283,12 +286,6 @@ h1 {
 
 .playButton:focus {
     outline: 0;
-}
-
-#ironman, #deadpool, #batman, #magneto, #captainamerica, #domino, #thor, #wonderwoman, #mystique, #scarletwitch, #superman, #thething {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #ironman {
